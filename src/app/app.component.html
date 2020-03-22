@@ -1,0 +1,9 @@
+<div class="container">
+  <app-child #child1 [version]="1"></app-child>
+  <app-child #child2 [version]="2"></app-child>
+
+  <button (click)="childOne.print()">ViewChild przez nazwę referencji</button>
+  <button (click)="childByName.print()">ViewChild przez nazwę komponentu</button>
+  <button (click)="child2.print()">Lokalna referencja</button>
+  <button #button (click)="printAll()">Wypisz wszystko</button>
+</div>
